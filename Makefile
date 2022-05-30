@@ -1,8 +1,8 @@
 setup:  
-	rm -rf .env
-	python3 -m venv .env
-	.env/bin/pip install --upgrade pip
-	.env/bin/pip install -r requirements.txt
+	rm -rf .venv
+	python -m venv .venv
+	.venv/bin/pip install --upgrade pip
+	.venv/bin/pip install -r requirements.txt
 nbextensions:
 	jupyter contrib nbextension install --user
 	jupyter nbextensions_configurator enable --user
